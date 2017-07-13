@@ -1,0 +1,52 @@
+{
+    "presets": [
+        "env",
+        "stage-0",
+        "flow"
+    ],
+    "plugins": [
+        "add-module-exports",
+        "transform-class-properties",
+        "syntax-class-properties",
+        "transform-decorators-legacy",
+        "syntax-decorators",
+        [
+            "module-resolver", {
+                "root": [
+                    ".",
+                    "./src"
+                ],
+                "alias": {
+                    "microbe/decorators/server": "./packages/server/src"
+                }
+            }
+        ]
+    ],
+    "env": {
+        "test": {
+            "presets": [
+                "env",
+                "stage-0",
+                "flow"
+            ],
+            "plugins": [
+                "add-module-exports",
+                "transform-class-properties",
+                "syntax-class-properties",
+                "transform-decorators-legacy",
+                "syntax-decorators",
+                [
+                    "module-resolver", {
+                        "root": [
+                            ".",
+                            "./src"
+                        ],
+                        "alias": {
+                            "microbe/decorators/server": "./packages/server/src"
+                        }
+                    }
+                ]
+            ]
+        }
+    }
+}

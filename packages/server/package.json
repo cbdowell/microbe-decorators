@@ -1,0 +1,12 @@
+{
+    "name": "microbe-decorator-server",
+    "version": "1.0.0",
+    "private": true,
+    "license": "MIT",
+    "main": "dist",
+    "scripts": {
+        "clean": "rm -rf dist",
+        "build": "babel src --out-dir dist",
+        "test": "node ./test/index.test.js"
+    }
+}

@@ -1,0 +1,16 @@
+[ignore]
+.*/node_modules/conventional-changelog-core/.*\.json$
+
+[include]
+
+[libs]
+flow-typed
+
+[options]
+esproposal.decorators=ignore
+module.system.node.resolve_dirname=./src
+module.system.node.resolve_dirname=./packages
+module.system.node.resolve_dirname=./packages/server
+module.system.node.resolve_dirname=./packages/server/src
+
+[lints]

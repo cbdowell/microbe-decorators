@@ -1,0 +1,60 @@
+{
+    "name": "microbe-decorators",
+    "version": "1.0.0",
+    "main": "dist",
+    "scripts": {
+        "clean": "rm -rf dist",
+        "build": "yarn run clean && babel src/ -d dist/",
+        "dev": "babel-node src/index.js",
+        "examples": "babel-node examples/index.js",
+        "prepublish": "yarn run build",
+        "start": "yarn build && node dist/index.js",
+        "test": "jest"
+    },
+    "license": "MIT",
+    "standard": {
+        "parser": "babel-eslint",
+        "globals": [
+            "test",
+            "expect"
+        ],
+        "plugins": [
+            "import",
+            "flowtype"
+        ],
+        "ignore": [
+            "/dist/",
+            "/packages/*/dist/",
+            "/packages/*/examples/",
+            "/flow-typed/",
+            "/examples/"
+        ]
+    },
+    "devDependencies": {
+        "babel-cli": "^6.24.1",
+        "babel-core": "^6.25.0",
+        "babel-eslint": "^7.2.3",
+        "babel-jest": "^20.0.3",
+        "babel-plugin-add-module-exports": "^0.2.1",
+        "babel-plugin-module-resolver": "^2.7.1",
+        "babel-plugin-syntax-class-properties": "^6.13.0",
+        "babel-plugin-syntax-decorators": "^6.13.0",
+        "babel-plugin-transform-class-properties": "^6.24.1",
+        "babel-plugin-transform-decorators-legacy": "^1.3.4",
+        "babel-preset-env": "^1.6.0",
+        "babel-preset-flow": "^6.23.0",
+        "babel-preset-stage-0": "^6.24.1",
+        "eslint-import-resolver-babel-module": "^3.0.0",
+        "eslint-plugin-flowtype": "^2.35.0",
+        "eslint-plugin-import": "^2.7.0",
+        "flow-bin": "^0.49.1",
+        "jest-cli": "^20.0.4",
+        "lerna": "^2.0.0-rc.5",
+        "snazzy": "^7.0.0",
+        "standard": "^10.0.2"
+    },
+    "dependencies": {
+        "flow-typed": "^2.1.2",
+        "global": "^4.3.2"
+    }
+}
