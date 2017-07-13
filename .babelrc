@@ -9,18 +9,7 @@
         "transform-class-properties",
         "syntax-class-properties",
         "transform-decorators-legacy",
-        "syntax-decorators",
-        [
-            "module-resolver", {
-                "root": [
-                    ".",
-                    "./src"
-                ],
-                "alias": {
-                    "microbe/decorators/server": "./packages/server/src"
-                }
-            }
-        ]
+        "syntax-decorators"
     ],
     "env": {
         "test": {
@@ -34,18 +23,7 @@
                 "transform-class-properties",
                 "syntax-class-properties",
                 "transform-decorators-legacy",
-                "syntax-decorators",
-                [
-                    "module-resolver", {
-                        "root": [
-                            ".",
-                            "./src"
-                        ],
-                        "alias": {
-                            "microbe/decorators/server": "./packages/server/src"
-                        }
-                    }
-                ]
+                "syntax-decorators"
             ]
         }
     }
